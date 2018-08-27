@@ -1,0 +1,11 @@
+framework module AKLog {
+  umbrella header "AKLog.h"
+
+  export *
+  module * { export * }
+}
+
+module AKLog.Swift {
+    header "AKLog-Swift.h"
+    requires objc
+}

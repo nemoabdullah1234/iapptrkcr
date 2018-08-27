@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9w3-06-xnU" customClass="STRNoDataFound" customModule="GatewayScanner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BE-Vi-5mu">
+                    <rect key="frame" x="55" y="251" width="266" height="165"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nodata" translatesAutoresizingMaskIntoConstraints="NO" id="QbS-To-kCj">
+                            <rect key="frame" x="76" y="0.0" width="115" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="115" id="1q0-zA-eVC"/>
+                                <constraint firstAttribute="width" constant="115" id="6VG-l0-3xH"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Records Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU9-0E-Orb">
+                            <rect key="frame" x="0.0" y="123" width="266" height="19"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G64-Ne-Y7A">
+                            <rect key="frame" x="0.0" y="0.0" width="266" height="123"/>
+                            <connections>
+                                <action selector="btnRetry:" destination="9w3-06-xnU" eventType="touchUpInside" id="LnG-ax-kdO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="GU9-0E-Orb" firstAttribute="top" secondItem="G64-Ne-Y7A" secondAttribute="bottom" id="5IN-6k-NP6"/>
+                        <constraint firstAttribute="height" constant="165" id="73Y-uj-pAe"/>
+                        <constraint firstAttribute="trailing" secondItem="G64-Ne-Y7A" secondAttribute="trailing" id="81b-la-O4R"/>
+                        <constraint firstItem="GU9-0E-Orb" firstAttribute="leading" secondItem="6BE-Vi-5mu" secondAttribute="leading" id="AVB-ga-Paf"/>
+                        <constraint firstItem="G64-Ne-Y7A" firstAttribute="top" secondItem="6BE-Vi-5mu" secondAttribute="top" id="FTv-S6-Tz5"/>
+                        <constraint firstAttribute="bottom" secondItem="GU9-0E-Orb" secondAttribute="bottom" constant="23" id="Iad-E6-tcZ"/>
+                        <constraint firstItem="GU9-0E-Orb" firstAttribute="top" secondItem="QbS-To-kCj" secondAttribute="bottom" constant="8" id="cN6-LZ-1Jq"/>
+                        <constraint firstItem="QbS-To-kCj" firstAttribute="top" secondItem="6BE-Vi-5mu" secondAttribute="top" id="fvw-v5-mbt"/>
+                        <constraint firstAttribute="width" constant="266" id="hZk-25-YCQ"/>
+                        <constraint firstItem="G64-Ne-Y7A" firstAttribute="leading" secondItem="6BE-Vi-5mu" secondAttribute="leading" id="oOm-1u-uy1"/>
+                        <constraint firstAttribute="trailing" secondItem="GU9-0E-Orb" secondAttribute="trailing" id="rx1-nn-Crx"/>
+                        <constraint firstItem="QbS-To-kCj" firstAttribute="centerX" secondItem="6BE-Vi-5mu" secondAttribute="centerX" id="uuw-lL-DWu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6BE-Vi-5mu" firstAttribute="centerX" secondItem="9w3-06-xnU" secondAttribute="centerX" id="5s7-Pg-N2y"/>
+                <constraint firstItem="6BE-Vi-5mu" firstAttribute="centerY" secondItem="9w3-06-xnU" secondAttribute="centerY" id="adl-9u-xhC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="btnRetry" destination="G64-Ne-Y7A" id="kZM-18-urU"/>
+                <outlet property="imgNoData" destination="QbS-To-kCj" id="y7l-1L-xPP"/>
+                <outlet property="lblNodata" destination="GU9-0E-Orb" id="eO2-iK-Xia"/>
+            </connections>
+            <point key="canvasLocation" x="547.5" y="188.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nodata" width="115" height="115"/>
+    </resources>
+</document>

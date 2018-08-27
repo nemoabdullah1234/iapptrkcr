@@ -1,0 +1,11 @@
+framework module AKProximity {
+  umbrella header "AKProximity.h"
+
+  export *
+  module * { export * }
+}
+
+module AKProximity.Swift {
+    header "AKProximity-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module AKTrack {
+  umbrella header "AKTrack.h"
+
+  export *
+  module * { export * }
+}
+
+module AKTrack.Swift {
+    header "AKTrack-Swift.h"
+    requires objc
+}

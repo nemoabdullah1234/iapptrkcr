@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STRDirectionMapViewController" customModule="STRCourier" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomSpace" destination="cLW-oc-Ini" id="zCl-gM-CgW"/>
+                <outlet property="btnDirections" destination="gMW-bn-sXg" id="koZ-BY-iQ6"/>
+                <outlet property="btnWebView" destination="z4X-Se-rxn" id="gfP-cY-Tpf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bluebtn" translatesAutoresizingMaskIntoConstraints="NO" id="LEN-sQ-2FF">
+                    <rect key="frame" x="48" y="626" width="280" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="4Yp-hy-7iV"/>
+                        <constraint firstAttribute="height" constant="33" id="Zue-bc-3aR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMW-bn-sXg">
+                    <rect key="frame" x="48" y="626" width="280" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="JvY-b2-Oe8"/>
+                        <constraint firstAttribute="width" constant="280" id="oAh-rv-Szh"/>
+                    </constraints>
+                    <state key="normal" title="DIRECTIONS"/>
+                    <connections>
+                        <action selector="btnDirections:" destination="-1" eventType="touchUpInside" id="q1w-jo-sZI"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z4X-Se-rxn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
+                    <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="IbW-uJ-49a"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gMW-bn-sXg" secondAttribute="bottom" constant="8" id="2s8-sz-4VH"/>
+                <constraint firstAttribute="trailing" secondItem="z4X-Se-rxn" secondAttribute="trailing" id="4pP-l1-41K"/>
+                <constraint firstItem="z4X-Se-rxn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8ZP-yF-HVs"/>
+                <constraint firstAttribute="bottom" secondItem="LEN-sQ-2FF" secondAttribute="bottom" constant="8" id="WY4-DI-4zM"/>
+                <constraint firstItem="LEN-sQ-2FF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XsL-4i-hh2"/>
+                <constraint firstAttribute="bottom" secondItem="z4X-Se-rxn" secondAttribute="bottom" constant="48" id="cLW-oc-Ini"/>
+                <constraint firstItem="gMW-bn-sXg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uq3-Ok-Mhe"/>
+                <constraint firstItem="z4X-Se-rxn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yCC-V2-7fc"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bluebtn" width="280" height="33"/>
+    </resources>
+</document>

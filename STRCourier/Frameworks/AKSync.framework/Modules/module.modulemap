@@ -1,0 +1,11 @@
+framework module AKSync {
+  umbrella header "AKSync.h"
+
+  export *
+  module * { export * }
+}
+
+module AKSync.Swift {
+    header "AKSync-Swift.h"
+    requires objc
+}

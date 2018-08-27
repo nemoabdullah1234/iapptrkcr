@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sideBarCell" rowHeight="85" id="ine-rF-Fwf" customClass="SideBarTableCell" customModule="STRCourier" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ine-rF-Fwf" id="Jxi-Fi-afv">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="Wen-6y-pbF">
+                        <rect key="frame" x="8" y="19" width="25" height="25"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="9DE-4v-YpR"/>
+                            <constraint firstAttribute="height" constant="25" id="k9V-aD-31y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTe-4h-SaI">
+                        <rect key="frame" x="41" y="16" width="271" height="31"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.086274509803921567" green="0.098039215686274508" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="TTe-4h-SaI" secondAttribute="trailing" id="3Ut-qg-chN"/>
+                    <constraint firstItem="Wen-6y-pbF" firstAttribute="centerY" secondItem="Jxi-Fi-afv" secondAttribute="centerY" id="OND-7i-miM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TTe-4h-SaI" secondAttribute="bottom" constant="8" id="PBW-9m-8fr"/>
+                    <constraint firstItem="TTe-4h-SaI" firstAttribute="leading" secondItem="Wen-6y-pbF" secondAttribute="trailing" constant="8" id="c45-iv-35N"/>
+                    <constraint firstItem="TTe-4h-SaI" firstAttribute="centerY" secondItem="Jxi-Fi-afv" secondAttribute="centerY" id="md2-vK-sfv"/>
+                    <constraint firstItem="Wen-6y-pbF" firstAttribute="leading" secondItem="Jxi-Fi-afv" secondAttribute="leading" constant="8" id="ukQ-oc-C0w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgName" destination="Wen-6y-pbF" id="Ekn-jq-4ME"/>
+                <outlet property="lblName" destination="TTe-4h-SaI" id="dMw-Fg-O4J"/>
+            </connections>
+            <point key="canvasLocation" x="205" y="113.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="about" width="21" height="21"/>
+    </resources>
+</document>

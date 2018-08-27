@@ -1,0 +1,85 @@
+PODS:
+  - Alamofire (4.5.1)
+  - AWSCognitoIdentityProvider (2.5.10):
+    - AWSCore (= 2.5.10)
+  - AWSCore (2.5.10)
+  - AWSIoT (2.5.10):
+    - AWSCore (= 2.5.10)
+  - AWSLex (2.5.10):
+    - AWSCore (= 2.5.10)
+  - AWSS3 (2.5.10):
+    - AWSCore (= 2.5.10)
+  - Cloudinary (2.0.2):
+    - Alamofire (~> 4.1)
+  - Crashlytics (3.8.6):
+    - Fabric (~> 1.6.3)
+  - DeviceKit (1.2.3)
+  - Fabric (1.6.13)
+  - Google-Maps-iOS-SDK (1.9.2)
+  - JSQMessagesViewController (7.3.5):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - JTAppleCalendar (7.0.6)
+  - JWTDecode (2.0.0)
+  - PhoneNumberKit (1.3.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 1.3.0)
+    - PhoneNumberKit/UIKit (= 1.3.0)
+  - PhoneNumberKit/PhoneNumberKitCore (1.3.0)
+  - PhoneNumberKit/UIKit (1.3.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - Realm (2.10.0):
+    - Realm/Headers (= 2.10.0)
+  - Realm/Headers (2.10.0)
+  - RealmSwift (2.10.0):
+    - Realm (= 2.10.0)
+  - SwiftSignatureView (2.0.0)
+  - SwiftyJSON (3.1.4)
+  - UrbanAirship-iOS-SDK (8.5.3)
+
+DEPENDENCIES:
+  - AWSCognitoIdentityProvider (~> 2.5.10)
+  - AWSCore (~> 2.5.0)
+  - AWSIoT (~> 2.5.0)
+  - AWSLex (~> 2.5.4)
+  - AWSS3
+  - Cloudinary (~> 2.0)
+  - Crashlytics
+  - DeviceKit (~> 1.0)
+  - Fabric
+  - Google-Maps-iOS-SDK
+  - JSQMessagesViewController (~> 7.3.4)
+  - JTAppleCalendar (~> 7.0)
+  - JWTDecode
+  - PhoneNumberKit (~> 1.2)
+  - Realm
+  - RealmSwift
+  - SwiftSignatureView (~> 2.0)
+  - SwiftyJSON
+  - UrbanAirship-iOS-SDK
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AWSCognitoIdentityProvider: 50c770c5d6a16788e4e4596986cd9be2bcbc5ace
+  AWSCore: 490c988f6af48a10ea113ff06c53a1ef72a3534b
+  AWSIoT: cff4af403e7f4f8dbccbb8aa39699b11b2308916
+  AWSLex: ea78374b298c35001a7108d05d0a63d91dd9e17b
+  AWSS3: cd25080951a7637668d4f33393fe24bcb04dfac7
+  Cloudinary: 2d7c889fc4329ebc59c7967ec277df882b2602d5
+  Crashlytics: 95d05f4e4c19a771250c4bd9ce344d996de32bbf
+  DeviceKit: f33cbc6e67d9bb416e42dedc647557c7c2f6d3d7
+  Fabric: 2fb5676bc811af011a04513451f463dac6803206
+  Google-Maps-iOS-SDK: 7f89cc1edb3ca239a410e5bc83cd1e060db3a289
+  JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  JTAppleCalendar: 6a942475e33b9ad4dee0a0e14aa4c63adcf4f543
+  JWTDecode: 178e47e5d28d3abcff778bacced8342858cd6cb5
+  PhoneNumberKit: 08aaf1968ea41a114327e9223cbb0391d76ae145
+  Realm: 98b3a25643cf6b3e07d2b99fb43fe0eb9c801dec
+  RealmSwift: 34073ad3a31232bbaf7c0db898c037940284cba2
+  SwiftSignatureView: aacf6b4fb9108d79b76af1d3f23a50ff50a0a98f
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UrbanAirship-iOS-SDK: e24b3b46b4492e4ec7d0edcf0872e9408c20e048
+
+PODFILE CHECKSUM: 5677cbbc0261169ce7a9f06daf64258c6e64c987
+
+COCOAPODS: 1.3.1
